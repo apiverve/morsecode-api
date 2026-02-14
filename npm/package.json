@@ -1,9 +1,18 @@
 {
   "name": "@apiverve/morsecode",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "Morse Code is a simple tool for encoding and decoding Morse code. It returns the encoded or decoded Morse code.",
   "main": "index.js",
   "types": "index.d.ts",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "mocha",
     "example": "node examples/basic.js"
@@ -14,14 +23,18 @@
     "directory": "npm"
   },
   "keywords": [
-    "morse code", "morse code api", "morse code tool", "morse code software", "morse code service"
+    ""
   ],
-  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "author": {
+    "name": "APIVerve",
+    "email": "hello@apiverve.com",
+    "url": "https://apiverve.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/apiverve/morsecode-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/morsecode?utm_source=npm",
+  "homepage": "https://apiverve.com/marketplace/morsecode?utm_source=npm&utm_medium=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
