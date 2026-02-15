@@ -12,9 +12,14 @@ namespace APIVerve.API.MorseCode
     {
         /// <summary>
         /// The text to encode or decode in Morse code
-        /// Example: hello world
         /// </summary>
         [JsonProperty("text")]
         public string Text { get; set; }
+
+        /// <summary>
+        /// Set to true to include an audio file of the Morse code
+        /// </summary>
+        [JsonProperty("audio")]
+        public string Audio { get; set; }
     }
 }
