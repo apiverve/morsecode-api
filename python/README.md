@@ -44,7 +44,10 @@ from apiverve_morsecode.apiClient import MorsecodeAPIClient
 # Initialize the client with your APIVerve API key
 api = MorsecodeAPIClient("[YOUR_API_KEY]")
 
-query = { "audio": true, "text": "This Is A Message" }
+query = {
+    "audio": true,
+    "text": "This Is A Message"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "audio": true, "text": "This Is A Message" }
+query = {
+    "audio": true,
+    "text": "This Is A Message"
+}
 ```
 
 ###### Simple Request
@@ -136,7 +142,10 @@ from apiverve_morsecode.apiClient import MorsecodeAPIClient, MorsecodeAPIClientE
 
 api = MorsecodeAPIClient("[YOUR_API_KEY]")
 
-query = { "audio": true, "text": "This Is A Message" }
+query = {
+    "audio": true,
+    "text": "This Is A Message"
+}
 
 try:
     result = api.execute(query)
@@ -157,7 +166,10 @@ from apiverve_morsecode.apiClient import MorsecodeAPIClient, MorsecodeAPIClientE
 
 api = MorsecodeAPIClient("[YOUR_API_KEY]")
 
-query = { "audio": true, "text": "This Is A Message" }
+query = {
+    "audio": true,
+    "text": "This Is A Message"
+}
 
 try:
     result = api.execute(query)
@@ -191,7 +203,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_morsecode.apiClient import MorsecodeAPIClient, MorsecodeAPIClientError
 
-query = { "audio": true, "text": "This Is A Message" }
+query = {
+    "audio": true,
+    "text": "This Is A Message"
+}
 
 # Using context manager ensures proper cleanup
 with MorsecodeAPIClient("[YOUR_API_KEY]") as api:
@@ -217,7 +232,10 @@ from apiverve_morsecode.apiClient import MorsecodeAPIClient
 # Enable debug mode
 api = MorsecodeAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "audio": true, "text": "This Is A Message" }
+query = {
+    "audio": true,
+    "text": "This Is A Message"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -232,8 +250,12 @@ from apiverve_morsecode.apiClient import MorsecodeAPIClient
 
 api = MorsecodeAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "audio": true,
+    "text": "This Is A Message"
+}
+
 try:
-    query = { "audio": true, "text": "This Is A Message" }
     result = api.execute(query)
     print(result)
 finally:
