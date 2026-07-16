@@ -20,6 +20,6 @@ namespace APIVerve.API.MorseCode
         /// Set to true to include an audio file of the Morse code
         /// </summary>
         [JsonProperty("audio")]
-        public string Audio { get; set; }
+        public bool? Audio { get; set; }
     }
 }
