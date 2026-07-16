@@ -25,6 +25,9 @@ namespace APIVerve.API.MorseCode
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -39,7 +42,7 @@ namespace APIVerve.API.MorseCode
         public Stats Stats { get; set; }
 
         [JsonProperty("valid")]
-        public bool Valid { get; set; }
+        public bool? Valid { get; set; }
 
         [JsonProperty("audio")]
         public Audio Audio { get; set; }
@@ -66,18 +69,30 @@ namespace APIVerve.API.MorseCode
         public string SampleRate { get; set; }
 
         [JsonProperty("expires")]
-        public long Expires { get; set; }
+        public long? Expires { get; set; }
     }
 
     public partial class Stats
     {
         [JsonProperty("characters")]
-        public long Characters { get; set; }
+        public long? Characters { get; set; }
 
         [JsonProperty("dits")]
-        public long Dits { get; set; }
+        public long? Dits { get; set; }
 
         [JsonProperty("dahs")]
-        public long Dahs { get; set; }
+        public long? Dahs { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
