@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/morsecode",
-  "version": "1.2.0",
-  "description": "Morse Code is a simple tool for encoding and decoding Morse code. It returns the encoded or decoded Morse code.",
+  "version": "1.2.2",
+  "description": "Morse Code is a Morse code translator and decoder API: it converts plain text to Morse code dots and dashes and translates Morse back into text. It provides character counts, dit and dah totals, and validation status, while paid plans add downloadable audio tones.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "morse code", "morse code api", "morse code tool", "morse code software", "morse code service"
+    "morse code api", "morse code decoder api", "morse code translator api", "text to morse code", "morse code decoder"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/morsecode-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/morsecode?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/morsecode?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
