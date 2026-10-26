@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/morsecode",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Morse Code is a Morse code translator and decoder API: it converts plain text to Morse code dots and dashes and translates Morse back into text. It provides character counts, dit and dah totals, and validation status, while paid plans add downloadable audio tones.",
   "main": "index.js",
   "types": "index.d.ts",
