@@ -17,7 +17,7 @@ namespace APIVerve.API.MorseCode
         public string Text { get; set; }
 
         /// <summary>
-        /// Set to true to include an audio file of the Morse code
+        /// Set to true to include an audio file of the Morse code. Audio is generated only when the encoded morse is 300 characters or fewer (roughly 60-80 characters of text); longer input returns audio: null with an audioError
         /// </summary>
         [JsonProperty("audio")]
         public bool? Audio { get; set; }
