@@ -50,7 +50,7 @@ final _formatPatterns = {
 ///
 /// Parameters:
 /// * [text] (required) - The text to encode or decode in Morse code
-/// * [audio] - Set to true to include an audio file of the Morse code
+/// * [audio] - Set to true to include an audio file of the Morse code. Audio is generated only when the encoded morse is 300 characters or fewer (roughly 60-80 characters of text); longer input returns audio: null with an audioError
 class MorsecodeClient {
   final String apiKey;
   final String baseUrl;
